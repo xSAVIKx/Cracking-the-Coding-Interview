@@ -22,4 +22,7 @@
 		</dependency>
 
 	</dependencies>
+	<modules>
+		<module>arrays_and_strings</module>
+	</modules>
 </project>
