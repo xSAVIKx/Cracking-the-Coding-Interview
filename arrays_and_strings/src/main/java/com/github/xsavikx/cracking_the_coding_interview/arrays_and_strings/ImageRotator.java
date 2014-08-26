@@ -17,7 +17,8 @@ public class ImageRotator {
 	}
 
 	/**
-	 * Makes given image matrix to given direction 90-degree rotation
+	 * Makes given image matrix to given direction 90-degree rotation. Matrix
+	 * should be rectangle or square, if not - unpredictable behavior.
 	 * 
 	 * @param imageMatrix
 	 *            matrix to rotate
