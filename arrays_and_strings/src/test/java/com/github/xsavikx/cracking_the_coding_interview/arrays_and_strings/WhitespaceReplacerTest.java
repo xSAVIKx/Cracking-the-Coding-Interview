@@ -5,11 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class WhitespaceReplacerTest {
+	WhitespaceReplacer wr = new WhitespaceReplacer();
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testReplaceWhitespacesIllegalArgumentException() {
-		String str = null;
-		WhitespaceReplacer.replaceWhitespaces(str);
+		WhitespaceReplacer.replaceWhitespaces(null);
 	}
 
 	@Test

@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class ColumnAndRowReseterTest {
+	ColumnAndRowReseter carr = new ColumnAndRowReseter();
 
 	@Test
 	public void testSetColumnAndRowToZero() {

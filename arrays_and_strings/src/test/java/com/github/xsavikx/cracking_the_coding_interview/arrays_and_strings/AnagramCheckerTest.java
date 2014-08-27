@@ -5,6 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class AnagramCheckerTest {
+	AnagramChecker a = new AnagramChecker();
+
+	@Test
+	public void testIsAnagramFalseLengthNotEqual() {
+		String str1 = "str1";
+		String strStr = "strStr";
+		assertFalse("", AnagramChecker.isAnagram(str1, strStr));
+	}
 
 	@Test
 	public void testIsAnagramTrue() {

@@ -7,6 +7,15 @@ import org.junit.Test;
 import com.github.xsavikx.cracking_the_coding_interview.arrays_and_strings.ImageRotator.Direction;
 
 public class ImageRotatorTest {
+	ImageRotator ir = new ImageRotator();
+
+	@Test
+	public void testPrintImageMatrix() {
+
+		int[][] imageMatrix = { { 1, 1, 1, 1 }, { 2, 2, 2, 2 }, { 3, 3, 3, 3 },
+				{ 4, 4, 4, 4 }, { 5, 5, 5, 5 } };
+		ImageRotator.printImageMatrix(imageMatrix);
+	}
 
 	@Test
 	public void testRotateImageClockwise() {

@@ -5,11 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class StringCompressorTest {
+	StringCompressor sc = new StringCompressor();
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testCompressStringIllegalArgumentException() {
-		String str = null;
-		StringCompressor.compressString(str);
+		StringCompressor.compressString(null);
 	}
 
 	@Test

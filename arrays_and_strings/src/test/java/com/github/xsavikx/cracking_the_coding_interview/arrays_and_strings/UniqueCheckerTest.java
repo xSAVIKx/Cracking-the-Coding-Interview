@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class UniqueCheckerTest {
+	UniqueChecker uc = new UniqueChecker();
 
 	@Test
 	public void testAreCharsInStringUniqueTrue() {

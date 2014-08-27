@@ -49,7 +49,7 @@ public class ImageRotator {
 			}
 			break;
 		default:
-			throw new IllegalArgumentException("No given direction was found");
+			break;
 
 		}
 
