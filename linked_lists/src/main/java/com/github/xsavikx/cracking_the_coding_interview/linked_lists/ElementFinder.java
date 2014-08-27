@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * Class for Cracking the coding Interview task 2.2
  * 
  * Description of task(in <b>Russian</b>): Реализуйте алгоритм для поиска в
- * односвязном списке k-го элемента с конца.
+ * односвязном списке <code>k-го</code> элемента с <code>конца</code>.
  * 
  * @author Iurii Sergiichuk
  *
