@@ -25,5 +25,6 @@
 	<modules>
 		<module>arrays_and_strings</module>
     <module>linked_lists</module>
+    <module>stack</module>
   </modules>
 </project>
