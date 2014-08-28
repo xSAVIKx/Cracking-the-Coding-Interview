@@ -11,19 +11,22 @@ public class NodeRemoverTest {
 
 	@Test
 	public void testNodeToString() {
-		Node<Character> a = new Node<Character>(null, 'a', null);
+		Node<Character> a = new Node<Character>('a', null);
+		Node<Character> b = new Node<Character>('b', a);
 
-		String expected = "Node [item=a, next=null, prev=null]";
-		assertEquals(expected, a.toString());
+		String aExpected = "Node [item=a, next=null]";
+		assertEquals(aExpected, a.toString());
+		String bExpected = "Node [item=b, next=a]";
+		assertEquals(bExpected, b.toString());
 	}
 
 	@Test
 	public void testRemove() {
-		Node<Character> a = new Node<Character>(null, 'a', null);
-		Node<Character> b = new Node<Character>(null, 'b', null);
-		Node<Character> c = new Node<Character>(null, 'c', null);
-		Node<Character> d = new Node<Character>(null, 'd', null);
-		Node<Character> e = new Node<Character>(null, 'e', null);
+		Node<Character> a = new Node<Character>('a', null);
+		Node<Character> b = new Node<Character>('b', null);
+		Node<Character> c = new Node<Character>('c', null);
+		Node<Character> d = new Node<Character>('d', null);
+		Node<Character> e = new Node<Character>('e', null);
 
 		a.next = b;
 		b.next = c;
@@ -37,11 +40,11 @@ public class NodeRemoverTest {
 
 	@Test
 	public void testRemoveLast() {
-		Node<Character> a = new Node<Character>(null, 'a', null);
-		Node<Character> b = new Node<Character>(null, 'b', null);
-		Node<Character> c = new Node<Character>(null, 'c', null);
-		Node<Character> d = new Node<Character>(null, 'd', null);
-		Node<Character> e = new Node<Character>(null, 'e', null);
+		Node<Character> a = new Node<Character>('a', null);
+		Node<Character> b = new Node<Character>('b', null);
+		Node<Character> c = new Node<Character>('c', null);
+		Node<Character> d = new Node<Character>('d', null);
+		Node<Character> e = new Node<Character>('e', null);
 
 		a.next = b;
 		b.next = c;

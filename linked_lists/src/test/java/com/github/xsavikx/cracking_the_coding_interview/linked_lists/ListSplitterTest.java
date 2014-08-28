@@ -9,6 +9,7 @@ import java.util.List;
 import org.junit.Test;
 
 public class ListSplitterTest {
+	ListSplitter ls = new ListSplitter();
 
 	@Test
 	public void testSortByNodeFive() {

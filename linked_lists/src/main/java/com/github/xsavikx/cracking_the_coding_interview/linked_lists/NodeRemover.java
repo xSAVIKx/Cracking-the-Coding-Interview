@@ -24,12 +24,10 @@ public class NodeRemover {
 	public static class Node<E> {
 		public E item;
 		public Node<E> next;
-		public Node<E> prev;
 
-		Node(Node<E> prev, E element, Node<E> next) {
+		Node(E element, Node<E> next) {
 			this.item = element;
 			this.next = next;
-			this.prev = prev;
 		}
 
 		@Override
@@ -40,13 +38,6 @@ public class NodeRemover {
 			builder.append(", next=");
 			if (next != null) {
 				builder.append(next.item);
-			} else {
-				builder.append("null");
-			}
-
-			builder.append(", prev=");
-			if (prev != null) {
-				builder.append(prev.item);
 			} else {
 				builder.append("null");
 			}
